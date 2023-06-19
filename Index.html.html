@@ -3,6 +3,11 @@
     <head>
         <title>My Portfolio</title>
         <link rel="stlesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script>
+            function RegisterClick(){
+                
+            }
+        </script>
        <style>
         .container{
             height: 100vh;
@@ -94,6 +99,7 @@
             padding: 100px opx;
             background-color: black;
             color: rgb(231, 85, 194);
+            height:680px
         }
         .about img{
             height: auto;
@@ -114,7 +120,7 @@
         }
         .about-text h2{
              color: yellow;
-             font-size: 75px;
+             font-size: 50px;
              text-transform: capitalize;
              margin-bottom: 25px;
         }
@@ -154,9 +160,9 @@
         }
         .title h2{
             color: rgb(226, 76, 199);
-            font-size: 75px;
+            font-size: 50px;
             width: 1130px;
-            margin: 30px auto;
+            margin: 25px auto;
             text-align: center;
         }
         .box{
@@ -164,6 +170,7 @@
             justify-content: center;
             align-items: center;
             min-height: 400px;
+            
         }
         .card{
             height: 365px;
@@ -188,6 +195,8 @@
             font-size: 30px;
             margin-bottom: 15px;
         }
+        
+      
         .pra p{
             color: white;
             font-size: 18px;
@@ -235,15 +244,13 @@
             border: 30px;
             transition: .4s;
         }
-        .contact-me .button-two:hover{
-            background-color: wheat;
-            border: 2px solid rgb(22, 9, 19);
-            cursor: pointer;
+        .contact-me {
+            color:white;
         }
         footer{
             position: relative;
             width: 100%;
-            height: 1000px;
+            height: 400px;
             background: black;
             display: flex;
             flex-direction: column;
@@ -295,7 +302,32 @@
             width: 100%;
             padding: 100px 0px;
         }
-       
+        .top {
+                color:rgb(234, 234, 16);
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                font-family: Arial;
+            }
+        .main{
+            display:grid;
+            grid-template-columns: 6fr 6fr;
+            height: 300px;
+            background-color: black;
+            color:white;
+            padding: 20px;
+        }
+        .main-title{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .main div {
+                margin-bottom: 15px;
+            }
+        
+    
+
        </style>
     </head>
     <body>
@@ -303,11 +335,11 @@
              <nav>
                 <h2 class="logo">Portfo<span>lio</span></h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="Index.html.html">Home</a></li>
+                    <li><a href="#footer">About Me</a></li>
+                    <li><a href="#Service">Services</a></li>
                     <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#footer">Contact Me</a></li>
                 </ul>
              </nav>
              <div class="content">
@@ -317,7 +349,7 @@
                 <div class="newsletter">
                     <form>
                         <input type="email" name="email" id="mail" placeholder="Enter Your Mail">
-                        <input type="button" name="button" value="Lets Start!">
+                        <input type="button" id="btn btn-primary" onclick="RegisterClick()" name="button" value="Lets Start!">
                     </form>
 
                 </div>
@@ -331,10 +363,9 @@
                 <div class="about-text">
                     <h2>Know Me More!</h2>
                     <h5><span>Developer & Designer</span></h5>
-                    <p>I am a full-stack web developer. I can provide completely code and successful design with perfect pixel. 
-                        Having knowledge of web animations, I can make your websites more interactive ans seo friendly. 
+                    <p>I am a full-stack web developer. I can provide completely code and provide successful design with perfect pixel. 
+                        Having knowledge of ReactJs, I can make your websites more interactive ans seo friendly. 
                         Also, a responsive design that will make your website accessible to all devices.</p>
-                        <button type="button">Let's get into a Conversation</button>
                 </div>
             </div>
         </section>
@@ -349,14 +380,12 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
                         <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                       </svg>
-                    <h5>Webite Developer</h5>
+                    <h5>Web Design</h5>
                     <div class="pra">
                         <p>Websites are built to fulfil two primary goals. 
                             First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
                             These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
+                            
                     </div>
                 </div>
 
@@ -364,14 +393,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
                         <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                       </svg>
-                    <h5>UI/UX Design</h5>
+                    <h5>As Developer</h5>
                     <div class="pra">
-                        <p>Websites are built to fulfil two primary goals. 
-                            First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
-                            These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
+                        <p>With a complete knowledge on front-end web developement, I can build Single page applications that will give a best user experience. With ReactJs, I can provide a good user interface that will be interactive and seo friendly.</p>
+    
                     </div>
                 </div>
 
@@ -379,86 +404,84 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
                         <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                       </svg>
-                    <h5>SEO</h5>
+                    <h5>Promise!</h5>
                     <div class="pra">
-                        <p>Websites are built to fulfil two primary goals. 
-                            First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
-                            These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
+                        <p>With my dedication and hard work, I assure you that I will never quit my responsibilities and fulfil all your expectations as per the requirements.I will also try to complete my task with the given period of time.</p>
+                            
                     </div>
                 </div>
             </div>
+
+            <div class="Responses">
+                <div class="title">
+                    <h2>My Technical Skills</h2>
+                </div>
+                <div class="box">
+                   <div class="card">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
+                           <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                         </svg>
+                         <h5>FRONT-END</h5>
+                   <div class="pra">
+                       <p>My front-end skills includes html,css,javascript. Also I can use Bootstrap and jQuery to make pages more attractive and seo friendly.</p>
+                           
+                   </div>
+                   </div>
+
+                   <div class="card">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
+                           <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                         </svg>
+                         <h5>BACK-END</h5>
+                   <div class="pra">
+                       <p>For complete end-to process, I have learnt how to connect with Database(MongoDB) and fetch Data from Api. 
+                          With a server side scripting technology(Node.js) I have learnt how to handle communication between front-end application and back-end database. 
+                          Also using a middleware(EXPRESS), to handle communication between client and server application.</p>
+                           
+                   </div>
+                   </div>
+                    
+                   <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
+                        <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                      </svg>
+                      <h5>Communication</h5>
+                <div class="pra">
+                    <p>Not only with technical skills, I can also deal with clients through communication. I can speak English as well as Hindi Fluently.</p> 
+                </div>
+                </div>
         </div>
         <!--contact me-->
         <footer>
-            <div class="Responses">
-                 <div class="title">
-                     <h2>Responses that Encourage Us!</h2>
-                 </div>
-                 <div class="box">
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                          </svg>
-                          <h5>XYZ</h5>
-                    <div class="pra">
-                        <p>Websites are built to fulfil two primary goals. 
-                            First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
-                            These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                          </svg>
-                          <h5>ABC</h5>
-                    <div class="pra">
-                        <p>Websites are built to fulfil two primary goals. 
-                            First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
-                            These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                          </svg>
-                          <h5>PQR</h5>
-                    <div class="pra">
-                        <p>Websites are built to fulfil two primary goals. 
-                            First is, it should be accessible to all devices. And the second is, it should be as fast as possible. 
-                            These goals not only makes your website seo friendly, but also gives client satisfaction.</p>
-                            <p style="text-align:center">
-                                <a class="button" href="#">Read More</a>
-                            </p>
-                    </div>
-                    </div>
-                 </div>
+        
+        
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="top">
+            Want to Hire me?  
+        </div>
+        <div class="main">
+            <div>
+                <div class="main-title">Reach me here!</div>
+            <div>Email:ankimohanty925@gmail.com</div>
+            <div>Contact:6370085332</div>
             </div>
-        <div class="contact-me">
-            <p>Want to have a Responsive website? Click on the below button to get one!</p><br>
-            <a class="button-two"  href="#">Hire me</a>
+            <div>
+                <div class="main-title">search me here!</div>
+            <div><a href="https://www.facebook.com/ankita.mohanty.9655">facebook</a></div>
+            <div><a href="https://www.linkedin.com/in/ankita-mohanty-733a271a6/">LinkedIn</a></div>
+            <div><a href="https://www.naukri.com/mnjuser/profile?id=&altresid">Naukri</a></div>
+            <div><a href="https://www.instagram.com/ankita_irreplaceable/">Instagram</a></div>
+            </div>
+            <div>
+                
         </div>
-        <div class="social">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-              </svg></i></a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-              </svg></i></a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
-                <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1v3ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-              </svg></i></a>
-        </div>
+    </footer>
+</body>
+</html>
+            
         </footer>
 
     </body>
